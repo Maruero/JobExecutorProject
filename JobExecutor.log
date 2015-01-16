@@ -1,0 +1,156 @@
+16/01/2015 17:49:04 INFO  [Application] - Execução iniciada.
+16/01/2015 17:49:05 INFO  [DriveLoader] - Driver carregado com sucesso.
+16/01/2015 17:49:06 INFO  [JobDao] - Conexão com o banco aberta: jdbc:mysql://localhost:3306/shopmaquinas
+16/01/2015 17:49:07 INFO  [Application] - Jobs carregados para execução: 1
+16/01/2015 17:49:09 INFO  [Application] - Início da execução de: QUERY_EMAIL - Envio de lembrete de expiração
+16/01/2015 17:49:12 INFO  [QueryEmailExecutor] - Início da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:04:41 INFO  [Application] - Execução iniciada.
+16/01/2015 18:04:42 INFO  [DriveLoader] - Driver carregado com sucesso.
+16/01/2015 18:04:43 INFO  [JobDao] - Conexão com o banco aberta: jdbc:mysql://localhost:3306/shopmaquinas
+16/01/2015 18:04:44 INFO  [Application] - Jobs carregados para execução: 1
+16/01/2015 18:04:44 INFO  [Application] - Início da execução de: QUERY_EMAIL - Envio de lembrete de expiração
+16/01/2015 18:04:49 INFO  [QueryEmailExecutor] - Início da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:06:53 INFO  [Application] - Execução iniciada.
+16/01/2015 18:06:53 INFO  [DriveLoader] - Driver carregado com sucesso.
+16/01/2015 18:06:54 INFO  [JobDao] - Conexão com o banco aberta: jdbc:mysql://localhost:3306/shopmaquinas
+16/01/2015 18:06:55 INFO  [Application] - Jobs carregados para execução: 1
+16/01/2015 18:06:55 INFO  [Application] - Início da execução de: QUERY_EMAIL - Envio de lembrete de expiração
+16/01/2015 18:06:58 INFO  [QueryEmailExecutor] - Início da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:07:07 ERROR [JobDao] - Problema ao inserir execução de job: 
+java.sql.SQLException: Field 'ExecutionID' doesn't have a default value
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2375)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2359)
+	at br.com.diastecnologia.jobexecutor.dao.JobDao.insertJobItem(JobDao.java:162)
+	at br.com.diastecnologia.jobexecutor.QueryEmailExecutor.execute(QueryEmailExecutor.java:30)
+	at br.com.diastecnologia.jobexecutor.Application.main(Application.java:36)
+16/01/2015 18:07:07 ERROR [JobDao] - SQLException: Field 'ExecutionID' doesn't have a default value
+16/01/2015 18:07:07 ERROR [JobDao] - SQLState: HY000
+16/01/2015 18:07:07 ERROR [JobDao] - VendorError: 1364
+16/01/2015 18:07:13 INFO  [Application] - Enviando e-mail Envio de lembrete de expiração para maruero@gmail.com
+16/01/2015 18:07:17 INFO  [Application] - Enviando com sucesso.
+16/01/2015 18:07:41 ERROR [JobDao] - Problema ao executar atualização de job executado: 
+java.sql.SQLException: Can not issue executeUpdate() for SELECTs
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1074)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:988)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:974)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2416)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2375)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2359)
+	at br.com.diastecnologia.jobexecutor.dao.JobDao.updateJobItemAsExecuted(JobDao.java:136)
+	at br.com.diastecnologia.jobexecutor.QueryEmailExecutor.execute(QueryEmailExecutor.java:46)
+	at br.com.diastecnologia.jobexecutor.Application.main(Application.java:36)
+16/01/2015 18:07:41 ERROR [JobDao] - SQLException: Can not issue executeUpdate() for SELECTs
+16/01/2015 18:07:42 ERROR [JobDao] - SQLState: 01S03
+16/01/2015 18:07:42 ERROR [JobDao] - VendorError: 0
+16/01/2015 18:07:45 INFO  [QueryEmailExecutor] - Término da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:07:55 ERROR [JobDao] - Problema ao executar atualização de job executado: 
+java.sql.SQLException: Can not issue executeUpdate() for SELECTs
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1074)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:988)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:974)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2416)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2375)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2359)
+	at br.com.diastecnologia.jobexecutor.dao.JobDao.updateJobAsExecuted(JobDao.java:85)
+	at br.com.diastecnologia.jobexecutor.Application.main(Application.java:42)
+16/01/2015 18:07:55 ERROR [JobDao] - SQLException: Can not issue executeUpdate() for SELECTs
+16/01/2015 18:07:55 ERROR [JobDao] - SQLState: 01S03
+16/01/2015 18:07:55 ERROR [JobDao] - VendorError: 0
+16/01/2015 18:07:55 INFO  [JobDao] - Conexão com o banco de dados fechada.
+16/01/2015 18:07:55 INFO  [Application] - Execução terminada.
+16/01/2015 18:09:50 INFO  [Application] - Execução iniciada.
+16/01/2015 18:09:50 INFO  [DriveLoader] - Driver carregado com sucesso.
+16/01/2015 18:09:51 INFO  [JobDao] - Conexão com o banco aberta: jdbc:mysql://localhost:3306/shopmaquinas
+16/01/2015 18:09:52 INFO  [Application] - Jobs carregados para execução: 1
+16/01/2015 18:09:52 INFO  [Application] - Início da execução de: QUERY_EMAIL - Envio de lembrete de expiração
+16/01/2015 18:09:54 INFO  [QueryEmailExecutor] - Início da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:10:06 INFO  [Application] - Enviando e-mail Envio de lembrete de expiração para maruero@gmail.com
+16/01/2015 18:10:08 INFO  [Application] - Enviando com sucesso.
+16/01/2015 18:10:37 ERROR [JobDao] - Problema ao executar atualização de job executado: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update JobItem set ItemExecuted = now() where ExecutionID = @ExecID' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at br.com.diastecnologia.jobexecutor.dao.JobDao.updateJobItemAsExecuted(JobDao.java:136)
+	at br.com.diastecnologia.jobexecutor.QueryEmailExecutor.execute(QueryEmailExecutor.java:46)
+	at br.com.diastecnologia.jobexecutor.Application.main(Application.java:36)
+16/01/2015 18:10:37 ERROR [JobDao] - SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update JobItem set ItemExecuted = now() where ExecutionID = @ExecID' at line 1
+16/01/2015 18:10:37 ERROR [JobDao] - SQLState: 42000
+16/01/2015 18:10:38 ERROR [JobDao] - VendorError: 1064
+16/01/2015 18:12:25 INFO  [Application] - Execução iniciada.
+16/01/2015 18:12:25 INFO  [DriveLoader] - Driver carregado com sucesso.
+16/01/2015 18:12:26 INFO  [JobDao] - Conexão com o banco aberta: jdbc:mysql://localhost:3306/shopmaquinas
+16/01/2015 18:12:26 INFO  [Application] - Jobs carregados para execução: 1
+16/01/2015 18:12:27 INFO  [Application] - Início da execução de: QUERY_EMAIL - Envio de lembrete de expiração
+16/01/2015 18:12:27 INFO  [QueryEmailExecutor] - Início da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:12:34 INFO  [Application] - Enviando e-mail Envio de lembrete de expiração para maruero@gmail.com
+16/01/2015 18:12:37 INFO  [Application] - Enviando com sucesso.
+16/01/2015 18:13:07 INFO  [QueryEmailExecutor] - Término da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:13:10 INFO  [JobDao] - Conexão com o banco de dados fechada.
+16/01/2015 18:13:11 INFO  [Application] - Execução terminada.
+16/01/2015 18:21:17 INFO  [Application] - Execução iniciada.
+16/01/2015 18:21:17 INFO  [DriveLoader] - Driver carregado com sucesso.
+16/01/2015 18:21:18 INFO  [JobDao] - Conexão com o banco aberta: jdbc:mysql://localhost:3306/shopmaquinas
+16/01/2015 18:21:18 INFO  [Application] - Jobs carregados para execução: 1
+16/01/2015 18:21:18 INFO  [Application] - Início da execução de: QUERY_EMAIL - Envio de lembrete de expiração
+16/01/2015 18:21:28 INFO  [QueryEmailExecutor] - Início da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:21:34 ERROR [JobDao] - Problema ao inserir execução de job: 
+java.sql.SQLException: Parameter index out of range (2 > number of parameters, which is 1).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1074)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:988)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:974)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3813)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3795)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3840)
+	at com.mysql.jdbc.PreparedStatement.setInt(PreparedStatement.java:3784)
+	at br.com.diastecnologia.jobexecutor.dao.JobDao.getMaxJobItemExecutionID(JobDao.java:200)
+	at br.com.diastecnologia.jobexecutor.dao.JobDao.insertJobItem(JobDao.java:237)
+	at br.com.diastecnologia.jobexecutor.QueryEmailExecutor.execute(QueryEmailExecutor.java:30)
+	at br.com.diastecnologia.jobexecutor.Application.main(Application.java:36)
+16/01/2015 18:21:34 ERROR [JobDao] - SQLException: Parameter index out of range (2 > number of parameters, which is 1).
+16/01/2015 18:21:34 ERROR [JobDao] - SQLState: S1009
+16/01/2015 18:21:34 ERROR [JobDao] - VendorError: 0
+16/01/2015 18:22:01 INFO  [Application] - Execução iniciada.
+16/01/2015 18:22:01 INFO  [DriveLoader] - Driver carregado com sucesso.
+16/01/2015 18:22:02 INFO  [JobDao] - Conexão com o banco aberta: jdbc:mysql://localhost:3306/shopmaquinas
+16/01/2015 18:22:03 INFO  [Application] - Jobs carregados para execução: 1
+16/01/2015 18:22:04 INFO  [Application] - Início da execução de: QUERY_EMAIL - Envio de lembrete de expiração
+16/01/2015 18:22:05 INFO  [QueryEmailExecutor] - Início da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:22:22 INFO  [Application] - Enviando e-mail Envio de lembrete de expiração para maruero@gmail.com
+16/01/2015 18:22:25 INFO  [Application] - Enviando com sucesso.
+16/01/2015 18:22:27 INFO  [QueryEmailExecutor] - Término da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:22:30 INFO  [JobDao] - Conexão com o banco de dados fechada.
+16/01/2015 18:22:31 INFO  [Application] - Execução terminada.
+16/01/2015 18:23:23 INFO  [Application] - Execução iniciada.
+16/01/2015 18:23:23 INFO  [DriveLoader] - Driver carregado com sucesso.
+16/01/2015 18:23:23 INFO  [JobDao] - Conexão com o banco aberta: jdbc:mysql://localhost:3306/shopmaquinas
+16/01/2015 18:23:23 INFO  [Application] - Jobs carregados para execução: 1
+16/01/2015 18:23:23 INFO  [Application] - Início da execução de: QUERY_EMAIL - Envio de lembrete de expiração
+16/01/2015 18:23:23 INFO  [QueryEmailExecutor] - Início da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:23:25 INFO  [Application] - Enviando e-mail Envio de lembrete de expiração para maruero@gmail.com
+16/01/2015 18:23:27 INFO  [Application] - Enviando com sucesso.
+16/01/2015 18:23:27 INFO  [QueryEmailExecutor] - Término da execução com class br.com.diastecnologia.jobexecutor.QueryEmailExecutor
+16/01/2015 18:23:27 INFO  [JobDao] - Conexão com o banco de dados fechada.
+16/01/2015 18:23:27 INFO  [Application] - Execução terminada.
